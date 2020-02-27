@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <a class="navbar-brand">Movies Now</a>
     <form class="form-inline my-2 my-lg-0" @submit.prevent="searchMovies(queryString)">
       <input

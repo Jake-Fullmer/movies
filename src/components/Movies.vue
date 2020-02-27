@@ -1,10 +1,9 @@
 <template>
   <div class="row">
-    <div class="col text-center">
-      <h3>Movie List</h3>
-      <ol>
+    <div class="col">
+      <ul>
         <movie v-for="movieObj in movies" :key="movieObj._id" :movieData="movieObj" />
-      </ol>
+      </ul>
     </div>
   </div>
 </template>
@@ -32,18 +31,7 @@ export default {
 </script>
 
 <style scoped>
-/* h3 {
-  margin: 40px 0 0;
-}
 ul {
   list-style-type: none;
-  padding: 0;
 }
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
-} */
 </style>

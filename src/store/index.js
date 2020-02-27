@@ -22,6 +22,9 @@ export default new Vuex.Store({
   mutations: {
     searchMovies(state, movies) {
       state.movies = movies;
+    },
+    setActive(state, movie) {
+      state.active = movie;
     }
   },
   actions: {
@@ -32,6 +35,9 @@ export default new Vuex.Store({
       } catch (error) {
         console.error(error);
       }
+    },
+    setActive({ commit }, movie) {
+      commit("setActive", movie)
     }
   },
   modules: {
