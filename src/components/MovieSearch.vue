@@ -1,12 +1,14 @@
 <template>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand">Movies Now</a>
+    <a class="navbar-brand">
+      <img src="../assets/the-movies.png" width="60" height="60" alt />
+    </a>
     <form class="form-inline my-2 my-lg-0" @submit.prevent="searchMovies(queryString)">
       <input
         class="form-control mr-sm-2"
         name="query"
         type="text"
-        placeholder="Search"
+        placeholder="Search Movies"
         aria-label="Search"
         v-model="queryString"
         required
