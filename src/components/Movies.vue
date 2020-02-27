@@ -1,23 +1,36 @@
 <template>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand">Movies Now</a>
-    <form class="form-inline my-2 my-lg-0" @submit="searchMovies">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form>
-  </nav>
+  <div class="row">
+    <div class="col text-center">
+      <h3>Movie List</h3>
+      <ol>
+        <movie v-for="movieObj in movies" :key="movieObj._id" :movieData="movieObj" />
+      </ol>
+    </div>
+  </div>
 </template>
 
 <script>
+import Movie from "./Movie.vue";
+
 export default {
   name: "Movies",
-  props: {
-    msg: String
+  mounted() {
+    this.$store.dispatch("searchMovies");
+  },
+  data() {
+    return {};
+  },
+  computed: {
+    movies() {
+      return this.$store.state.movies;
+    }
+  },
+  components: {
+    Movie
   }
 };
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 /* h3 {
   margin: 40px 0 0;

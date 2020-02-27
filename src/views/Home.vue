@@ -7,10 +7,12 @@
     </div>
     <div class="row">
       <div class="col">
-        <movies />
+        <movie-search />
       </div>
+    </div>
+    <div class="row">
       <div class="col">
-        <active />
+        <movies />
       </div>
     </div>
   </div>
@@ -19,12 +21,13 @@
 <script>
 // @ is an alias to /src
 import Movies from "@/components/Movies.vue";
+import MovieSearch from "@/components/MovieSearch.vue";
 
 export default {
   name: "Home",
   components: {
     Movies,
-    Active
+    MovieSearch
   }
 };
 </script>
