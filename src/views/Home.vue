@@ -30,3 +30,8 @@ export default {
   }
 };
 </script>
+<style>
+/* .home {
+  background-image: url("../assets/seats.jpg");
+} */
+</style>

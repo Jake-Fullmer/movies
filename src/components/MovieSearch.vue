@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <nav class="navbar navbar-dark bg-dark">
     <a class="navbar-brand">
       <img src="../assets/the-movies.png" width="60" height="60" alt />
     </a>

@@ -14,7 +14,7 @@ import Movie from "./Movie.vue";
 export default {
   name: "Movies",
   mounted() {
-    this.$store.dispatch("searchMovies");
+    // this.$store.dispatch("searchMovies");
   },
   data() {
     return {};
