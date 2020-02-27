@@ -1,11 +1,7 @@
 <template>
   <div class="home">
-    <div class="row mb-2">
-      <div class="col">
-        <movie-search />
-      </div>
-    </div>
-    <div class="row">
+    <movie-search />
+    <div class="row container-fluid">
       <div class="col-3">
         <movies />
       </div>

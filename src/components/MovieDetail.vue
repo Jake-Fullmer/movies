@@ -7,7 +7,10 @@
           width="250"
           class="m-1"
         />
-        <h4 class="my-1">{{ details.title }}</h4>
+        <h4 class="my-1">
+          {{ details.title }}
+          <button type="button" class="btn btn-outline-success">Save</button>
+        </h4>
         <p>{{ details.overview }}</p>
         <em>
           <p>Released: {{ details.release_date }}</p>
