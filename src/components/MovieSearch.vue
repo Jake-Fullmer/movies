@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar navbar-dark bg-dark">
+  <nav class="navbar navbar-dark bg-dark sticky-top">
     <a class="navbar-brand">
       <img src="../assets/the-movies.png" width="60" height="60" alt />
     </a>
@@ -35,4 +35,7 @@ export default {
 </script>
 
 <style>
+.navbar {
+  background: rgba(0, 0, 0, 0.7) !important;
+}
 </style>
